@@ -286,6 +286,9 @@ button a:active {
 .confirmation .submit {
   height: 120px;
   margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: inherit;
   font-size: 3rem;
   text-transform: uppercase;
