@@ -1,0 +1,37 @@
+/* layout
+----------------------------------------------------------------------------- */
+#site-wrapper {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  background-image: url('../images/coppa-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  border-bottom: .5rem solid $brand-blue;
+  margin-bottom: 3rem;
+  height: 90px;
+  padding: 0 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: $brand-grey;
+
+  img {
+    width: 10rem;
+    height: auto;
+  }
+}
+
+#site-wrapper-no-bg {
+  width: 100%;
+//  max-width: 1440px;
+  margin: 0 auto;
+
+  header {
+    margin-bottom: 0;
+  }
+}

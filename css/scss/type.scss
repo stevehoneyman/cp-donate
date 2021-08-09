@@ -1,0 +1,47 @@
+/* type
+----------------------------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: $font-primary;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.25;
+  letter-spacing: .5px;
+}
+
+li {
+  line-height: 1.25;
+  letter-spacing: .5px;
+}
+
+h1 {
+  width: 100%;
+//  max-width: 275px;
+  padding: 1rem 1.5rem;
+  margin: 0 auto 3rem;
+  background: rgba(255, 255, 255, 1);
+  font-size: 4rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $brand-blue;
+}
+
+h2,
+h3 {
+  margin-bottom: 3rem;
+  color: $white;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 28px;
+
+  // &.set-amount {
+  //   font-size: 1.5rem;
+  // }
+}
