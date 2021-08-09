@@ -131,6 +131,7 @@ header img {
 
 #site-wrapper-no-bg {
   width: 100%;
+  max-width: 320px;
   margin: 0 auto;
 }
 #site-wrapper-no-bg header {
