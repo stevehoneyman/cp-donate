@@ -203,6 +203,13 @@ button {
   color: #fff;
   transform: translateX(5px);
 }
+button a,
+button a:link,
+button a:visited,
+button a:active {
+  color: #ae1059;
+  text-decoration: none;
+}
 
 .selected-white {
   border: 3px solid #fff;
@@ -284,6 +291,10 @@ button {
   text-transform: uppercase;
   color: #fff;
   background: #e61576;
+}
+.opener a,
+.confirmation a {
+  text-decoration: none;
 }
 .opener #amount-select,
 .confirmation #amount-select {
