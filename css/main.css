@@ -191,7 +191,7 @@ header img {
   color: #ae1059;
 }
 
-.your-donation {
+.your-donation-25 {
   padding: 1rem;
   border-radius: 10px;
   border: 3px solid #1b195a;
@@ -200,18 +200,21 @@ header img {
   background: #fff;
   transform: translateX(5px);
 }
-.your-donation p {
+.your-donation-25 p {
   font-family: helvetica, arial, 'sans-serif';
   font-size: .875rem;
   line-height: 1.45;
   color: #1b195a;
 }
-.your-donation p strong {
+.your-donation-25 p strong {
   margin-bottom: .875rem;
   display: block;
   font-family: "bebas-neue-by-fontfabric";
   font-size: 1.25rem;
   letter-spacing: .5px;
+}
+.your-donation-25.no-data {
+  display: none;
 }
 
 button {
@@ -246,6 +249,32 @@ button a:active {
   box-shadow: #ae1059 -5px 5px;
   background: #fff;
   color: #ae1059;
+}
+
+#set-amount {
+  width: 50%;
+  height: 48px;
+  padding: 8px 0 0 1rem;
+  border: 3px solid #f0bdd6;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+  background: #e61576;
+  transform: translateX(5px);
+}
+#set-amount::placeholder {
+  font-family: "bebas-neue-by-fontfabric";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.set-amount {
+  margin-bottom: 1rem;
+  font-family: "bebas-neue-by-fontfabric";
+  font-size: 28px;
+  letter-spacing: .5px;
+  color: #fff;
+  transform: translateX(3px);
 }
 
 .opener,
