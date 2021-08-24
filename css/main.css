@@ -191,7 +191,9 @@ header img {
   color: #ae1059;
 }
 
-.your-donation-25 {
+.your-donation-25,
+.your-donation-50,
+.your-donation-100 {
   padding: 1rem;
   border-radius: 10px;
   border: 3px solid #1b195a;
@@ -200,21 +202,34 @@ header img {
   background: #fff;
   transform: translateX(5px);
 }
-.your-donation-25 p {
+.your-donation-25 p,
+.your-donation-50 p,
+.your-donation-100 p {
   font-family: helvetica, arial, 'sans-serif';
   font-size: .875rem;
   line-height: 1.45;
   color: #1b195a;
 }
-.your-donation-25 p strong {
+.your-donation-25 p strong,
+.your-donation-50 p strong,
+.your-donation-100 p strong {
   margin-bottom: .875rem;
-  display: block;
   font-family: "bebas-neue-by-fontfabric";
   font-size: 1.25rem;
   letter-spacing: .5px;
 }
-.your-donation-25.no-data {
+
+.your-donation-25 {
+  display: block;
+}
+
+.your-donation-50,
+.your-donation-100 {
   display: none;
+}
+.your-donation-50.show-data,
+.your-donation-100.show-data {
+  display: block;
 }
 
 button {

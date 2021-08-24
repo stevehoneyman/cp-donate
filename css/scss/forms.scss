@@ -60,7 +60,9 @@
   }
 }
 
-.your-donation-25 {
+.your-donation-25,
+.your-donation-50,
+.your-donation-100 {
   padding: 1rem;
   border-radius: 10px;
   border: 3px solid $brand-blue;
@@ -77,15 +79,23 @@
 
     strong {
       margin-bottom: .875rem;
-      display: block;
+    //  display: block;
       font-family: $font-primary;
       font-size: 1.25rem;
       letter-spacing: .5px;
     }
   }
+}
 
-  &.no-data {
-    display: none;
+.your-donation-25 {
+  display: block;
+}
+.your-donation-50,
+.your-donation-100 {
+  display: none;
+
+  &.show-data {
+   display: block;
   }
 }
 
