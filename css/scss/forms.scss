@@ -3,13 +3,41 @@
 .form-container {
   width: 100%;
   max-width: 680px;
-  padding-bottom: 10rem;
+  padding-bottom: re5m;
   margin: 0 auto;
+
+  .personal-details,
+  .payment-details,
+  .direct-debit,
+  .privacy,
+  .gift-aid {
+    margin-top: 3rem;
+  }
 
   h2,
   h3 {
     color: $brand-blue;
   }
+
+  p {
+    margin-bottom: 1rem;
+    font-family: $font-secondary;
+  //  color: #444;
+  }
+
+  .privacy p {
+    padding: 0 .25rem;
+    font-size: .75rem;
+
+    strong {
+      font-size: 1rem;
+    //  color: $brand-blue;
+    }
+  }
+}
+
+form {
+  padding-bottom: 1rem;
 }
 
 .form-inner {
@@ -167,7 +195,7 @@ button {
   transform: translateX(3px);
 }
 
-// opener form fields and controls
+// payment fields and controls
 .opener,
 .confirmation {
   font-family: $font-primary;
@@ -236,6 +264,10 @@ button {
     text-transform: uppercase;
     color: $white;
     background: $brand-pink;
+  }
+
+  input[type="textarea"] {
+    height: 200px;
   }
 
   a {
@@ -335,7 +367,7 @@ button {
 // layout
 fieldset {
   border: none;
-  margin: 5rem 0;
+  margin: 3rem 0;
   display: flex;
   flex-direction: column;
 

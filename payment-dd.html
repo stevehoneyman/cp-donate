@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+	<head lang="en">
+		<title>Payment Details - Direct Debit</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/viz1yas.css">
+  </head>
+
+	<body>
+    <div id="site-wrapper-no-bg">
+      <header>
+        <figure>
+          <img src="images/coppafeel-logo.svg">
+        </figure>
+      </header>
+
+      <div class="form-container opener wrap">
+        <form>
+          <h1>Monthly Payment</h1>
+
+          <!-- amount with option to change-->
+          <fieldset>
+            <label for="amount-select">You've chosen a monthly payment of :</label>
+            <select name="pets" id="amount-select">
+                <option value="5">£5</option>
+                <option value="10">£10</option>
+                <option value="15">£15</option>
+            </select>
+          </fieldset>
+
+          <!-- select payment method-->
+          <fieldset class="payment-method">
+            <h2>Select Payment Method</h2>
+
+            <div class="payment-choices">
+              <label for="dd">Bank</label>
+              <input type="radio" id="dd" name="choice" value="bnk" checked>
+
+              <label for="pp">PayPal</label>
+              <input type="radio" id="pp" name="choice" value="pp">
+            </div>
+          </fieldset>
+
+          <!-- personal details -->
+          <fieldset class="personal-details">
+            <h2>Personal details</h2>
+
+            <label for="first-name">Name *</label>
+            <input type="text" id="first-name" name="first_name" autocomplete="name">
+
+            <label for="phone-number">Phone Number *</label>
+            <input type="tel" id="phone-number" name="phone_number" autocomplete="tel">
+
+            <label for="email">Address *</label>
+            <input type="textarea" id="address" name="address" autocomplete="additional-name">
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+
+            <div class="donation-details">
+              <label for="your-donation">Why are you donating? (optional)</label>
+              <!-- <p>This bit isn't required, but it woudl be a great help to us if you could tell us why you're donating</p> -->
+              <input type="textarea" id="your-donation" name="your_donation">
+           </div>
+
+            <div class="privacy">
+              <p><strong>A note about your privacy</strong></p>
+              <p>We collect data in order to better understand our supporters and refine our marketing. We never release or re-sell this or any other information to third-parties.</p>
+              <p>Read more about our <a href="#">privacy policy.</a></p>
+            </div>
+          </fieldset>
+          <!-- close personal details-->
+
+          <!-- payment details -->
+          <fieldset class="payment-details">
+            <h2>Payment details</h2>
+
+            <label for="account-name">Name (as it appears on card) *</label>
+            <input input="text" id="account-name" name="account_name">
+
+            <label for="account-number">Account number *</label>
+            <input inputmode="numeric" id="account" name="account_num">
+
+            <label for="sort-code">Sort Code *</label>
+            <input inputmode="numeric" id="sort-code" name="sort_code">
+
+            <!-- direct debit confirmation -->
+            <div class="direct-debit">
+              <label for="dd-conf">I confirm I wish to set up a direct debit</label>
+              <input type="checkbox" id="dd-conf" name="dd_conf">
+            </div>
+
+            <!-- gift aid -->
+            <div class="gift-aid">
+              <h2>Gift Aid</h2>
+              <p>Choosing gift aid allows us to claim an extra 20% per pound you donate at no extra cost to you!</p>
+              <label for="gift-aid">Yes I'd like to add gift add</label>
+              <input type="checkbox" id="gift-aid" name="gift_aid">
+            </div>  
+          </fieldset>
+          <!-- close payment details -->
+
+          <!-- submit -->
+          <input type="submit" value="donate" class="submit">
+
+        </form><!-- close form -->
+      </div><!-- close form-container -->
+
+    </div><!-- close site-wrapper -->
+  </body>
+</html>
