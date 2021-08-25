@@ -220,11 +220,16 @@ button {
     letter-spacing: .5px;
   }
 
+  input,
+  textarea,
+  input[type="checkbox"] {
+    border: none;
+    background: $white;
+  }
+
   input {
     width: 100%;
     height: 56px;
-    border: none;
-    background: $white
   }
 
   input[type="radio"] {

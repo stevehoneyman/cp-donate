@@ -310,11 +310,17 @@ button {
     font-family: sans-serif;
     letter-spacing: .5px; }
   .opener input,
-  .confirmation input {
-    width: 100%;
-    height: 56px;
+  .opener textarea,
+  .opener input[type="checkbox"],
+  .confirmation input,
+  .confirmation textarea,
+  .confirmation input[type="checkbox"] {
     border: none;
     background: #fff; }
+  .opener input,
+  .confirmation input {
+    width: 100%;
+    height: 56px; }
   .opener input[type="radio"],
   .confirmation input[type="radio"] {
     height: 40px; }
