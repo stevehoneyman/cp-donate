@@ -3,7 +3,7 @@
 .form-container {
   width: 100%;
   max-width: 680px;
-  padding-bottom: re5m;
+  padding-bottom: 1rem;
   margin: 0 auto;
 
   .personal-details,
@@ -22,7 +22,6 @@
   p {
     margin-bottom: 1rem;
     font-family: $font-secondary;
-  //  color: #444;
   }
 
   .privacy p {
@@ -31,7 +30,6 @@
 
     strong {
       font-size: 1rem;
-    //  color: $brand-blue;
     }
   }
 }
@@ -59,10 +57,6 @@ form {
   font-family: $font-primary;
   color: $white;
 
-  @include mq($large-mobile) {
-  //  flex-direction: row;
-  }
-
   li {
     width: 100%;
     min-width: 160px;
@@ -80,10 +74,6 @@ form {
       box-shadow: rgba(174, 16, 89, 1) -5px 5px;
       background: $white;
       color: rgba(174, 16, 89, 1);
-    }
-
-    @include mq($large-mobile) {
-    //  margin: 0 1rem 0 0;
     }
   }
 }
@@ -107,7 +97,6 @@ form {
 
     strong {
       margin-bottom: .875rem;
-    //  display: block;
       font-family: $font-primary;
       font-size: 1.25rem;
       letter-spacing: .5px;
@@ -129,7 +118,6 @@ form {
 
 button {
   width: 100%;
-//  max-width: 200px;
   height: 90px;
   padding: .5rem;
   border: 4px solid $white;
@@ -147,10 +135,6 @@ button {
   a:active {
     color: rgba(174, 16, 89, 1);
     text-decoration: none;
-  }
-
-  @include mq($large-mobile) {
-  //  margin: 0 1rem 0 0;
   }
 }
 
@@ -173,7 +157,6 @@ button {
   padding: 8px 0 0 1rem;
   border: 3px solid $fade-pink;
   border-radius: 10px;
-//  box-shadow: rgba(240, 189, 214, 1) -5px 5px;
   margin-bottom: 3rem;
   background: $brand-pink;
   transform: translateX(5px);
@@ -239,7 +222,6 @@ button {
 
   input {
     width: 100%;
-  //  max-width: 480px;
     height: 56px;
     border: none;
     background: $white
@@ -266,8 +248,9 @@ button {
     background: $brand-pink;
   }
 
-  input[type="textarea"] {
-    height: 200px;
+  textarea {
+    width: 100%;
+    min-height: 100px;
   }
 
   a {
@@ -295,7 +278,6 @@ button {
   .gift-aid  {
     p {
       width: 100%;
-    //  max-width: 480px;
       margin-bottom: 2rem;
       font-family: sans-serif;
       font-size: .75rem;
@@ -321,7 +303,7 @@ button {
   }
 
   p {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   .tick {
@@ -341,17 +323,21 @@ button {
   .stay-in-touch {
     padding-left: 2rem;
     display: flex;
+    flex-direction: column;
 
     input[type="checkbox"] {
-      margin-right: 1rem;
+      margin: 0 1rem 1rem 0;
+    //  order: 1;
     }
 
     label {
+    //  order: 0;
       font-weight: 600;
       color: $brand-blue;
     }
 
     p {
+      width: 90%;
       text-align: left;
     }
   }

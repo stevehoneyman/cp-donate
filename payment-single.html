@@ -1,6 +1,6 @@
 <!doctype html>
-<html>
-	<head lang="en">
+<html lang="en">
+	<head>
 		<title>Payment Details - Single Payment</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <div id="site-wrapper-no-bg">
       <header>
         <figure>
-          <img src="images/coppafeel-logo.svg">
+          <img src="images/coppafeel-logo.svg" alt="coppafeel logo">
         </figure>
       </header>
 
@@ -24,13 +24,12 @@
           <!-- amount with option to change-->
           <fieldset>
             <label for="amount-select">You've chosen to pay:</label>
-            <select name="pets" id="amount-select">
-                <option value="5">£25</option>
-                <option value="25">£50</option>
-                <option value="100">£100</option>
+            <select name="amount" id="amount-select">
+              <option value="5">£25</option>
+              <option value="25">£50</option>
+              <option value="100">£100</option>
             </select>
           </fieldset>
-
 
           <!-- select payment method-->
           <fieldset class="payment-method">
@@ -38,10 +37,10 @@
 
             <div class="payment-choices">
               <label for="dd">Bank</label>
-              <input type="radio" id="dd" name="choice" value="bnk" checked>
+              <input type="radio" id="dd" name="choice" value="debit" checked>
 
               <label for="pp">PayPal</label>
-              <input type="radio" id="pp" name="choice" value="pp">
+              <input type="radio" id="pp" name="choice" value="paypal">
             </div>
           </fieldset>
 
@@ -49,32 +48,44 @@
           <fieldset class="personal-details">
             <h2>Personal details</h2>
 
-            <label for="first-name">Name *</label>
-            <input type="text" id="first-name" name="first_name" autocomplete="name">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name">
 
+            <label for="last-name">Surname *</label>
+            <input type="text" id="last-name" name="last_name">
+
+            <label for="address-1">Address line 1 *</label>
+            <input type="text" id="address-1" name="address_1">
+
+            <label for="address-2">Address line 2 *</label>
+            <input type="text" id="address-2" name="address_2">
+
+            <label for="county">County *</label>
+            <input type="text" id="county" name="county">
+
+            <label for="postcode">Postcode *</label>
+            <input type="text" id="postcode" name="postcode">
             <label for="phone-number">Phone Number *</label>
-            <input type="tel" id="phone-number" name="phone_number" autocomplete="tel">
-
-            <label for="email">Address *</label>
-            <input type="textarea" id="address" name="address" autocomplete="additional-name">
+            <input type="tel" id="phone-number" name="phone_number">
 
             <label for="email">Email Address *</label>
             <input type="email" id="email" name="email" autocomplete="email">
 
-
-          <!-- donation-->
-          <div class="donation-details">
-            <label for="your-donation">Why are you donating? (optional)</label>
-            <!-- <p>This bit isn't required, but it woudl be a great help to us if you could tell us why you're donating</p> -->
-            <input type="textarea" id="your-donation" name="your_donation">
-          </div>
-
-           </fieldset>
+            <!-- donation-->
+            <div class="donation-details">
+              <label for="your-donation">Why are you donating? (optional)</label>
+              <!--
+              <p>This bit is optional, but it would be a great help to us if you could tell us why you're donating</p>
+              -->
+              <textarea id="your-donation" name="your_donation"></textarea>
+            </div>
+          </fieldset>
 
           <!-- privacy -->
           <div class="privacy">
             <p><strong>About your privacy</strong></p>
-            <p>We collect data in order to better understand our supporters and refine our marketing. We never release or re-sell this or any other information to third-parties.</p>
+            <p>We collect data in order to better understand our supporters and refine our marketing.</p>
+            <p>We never release, re-use or re-sell this or any other information to third-parties.</p>
             <p>Read more about our <a href="#">privacy policy.</a></p>
           </div>
 
@@ -82,27 +93,29 @@
           <fieldset class="payment-details">
             <h2>Your payment details</h2>
 
-            <label for="card">Card Number (required)</label>
-            <input type="text" id="account" name="card_num">
+            <label for="card-num">Card Number *</label>
+            <input type="text" id="card-num" name="card_num">
 
             <!-- <label for="sort-code">Sort Code</label>
             <input type="text" id="sort-code" name="sort_code"> -->
 
-            <label for="expiry">Expiry Date (required)</label>
+          <label for="expiry-date">Expiry Date *</label>
             <input type="text" id="expiry-date" name="expiry_date">
 
-            <label for="cvc-number">CVC (required)</label>
+            <label for="cvc-number">CVC *</label>
             <input type="text" id="cvc-number" name="cvc">
 
             <!-- gift aid -->
             <div class="gift-aid">
               <h2>Gift Aid</h2>
               <p>Choosing gift aid allows us to claim an extra 20% per pound you donate at no extra cost to you!</p>
-              <label for="gift-aid">Yes I'd like to add gift add</label>
+              <p>Put simply, if you were kind enough to donate fifty pounds we can claim an extra tenner!</p>
+              <label for="gift-aid">Yes! I'd love to help with gift aid!</label>
               <input type="checkbox" id="gift-aid" name="gift_aid">
             </div>
           </fieldset>
-          <!-- submit -->
+
+          <!-- link used to demo user journey in dev, replace with button in prod -->
           <a href="https://amazing-fermat-ac911c.netlify.app/confirmation.html" class="submit">
             <!-- <input type="submit" value="donate" class="submit"> -->
             Donate

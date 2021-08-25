@@ -1,6 +1,6 @@
 <!doctype html>
-<html>
-	<head lang="en">
+<html lang="en">
+	<head>
 		<title>Payment Details - Direct Debit</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
     <div id="site-wrapper-no-bg">
       <header>
         <figure>
-          <img src="images/coppafeel-logo.svg">
+          <img src="images/coppafeel-logo.svg" alt="coppafeel">
         </figure>
       </header>
 
@@ -44,48 +44,63 @@
             </div>
           </fieldset>
 
-          <!-- personal details -->
+          <!-- account details -->
           <fieldset class="personal-details">
             <h2>Personal details</h2>
 
-            <label for="first-name">Name *</label>
-            <input type="text" id="first-name" name="first_name" autocomplete="name">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first_name">
 
+            <label for="last-name">Surname *</label>
+            <input type="text" id="last-name" name="last_name">
+
+            <label for="address-1">Address line 1 *</label>
+            <input type="text" id="address-1" name="address_1">
+
+            <label for="address-2">Address line 2 *</label>
+            <input type="text" id="address-2" name="address_2">
+
+            <label for="county">County *</label>
+            <input type="text" id="county" name="county">
+
+            <label for="postcode">Postcode *</label>
+            <input type="text" id="postcode" name="postcode">
             <label for="phone-number">Phone Number *</label>
-            <input type="tel" id="phone-number" name="phone_number" autocomplete="tel">
-
-            <label for="email">Address *</label>
-            <input type="textarea" id="address" name="address" autocomplete="additional-name">
+            <input type="tel" id="phone-number" name="phone_number">
 
             <label for="email">Email Address *</label>
             <input type="email" id="email" name="email" autocomplete="email">
 
+            <!-- donation-->
             <div class="donation-details">
               <label for="your-donation">Why are you donating? (optional)</label>
-              <!-- <p>This bit isn't required, but it woudl be a great help to us if you could tell us why you're donating</p> -->
-              <input type="textarea" id="your-donation" name="your_donation">
-           </div>
-
-            <div class="privacy">
-              <p><strong>A note about your privacy</strong></p>
-              <p>We collect data in order to better understand our supporters and refine our marketing. We never release or re-sell this or any other information to third-parties.</p>
-              <p>Read more about our <a href="#">privacy policy.</a></p>
+              <!--
+              <p>This bit is optional, but it would be a great help to us if you could tell us why you're donating</p>
+              -->
+              <textarea id="your-donation" name="your_donation"></textarea>
             </div>
           </fieldset>
-          <!-- close personal details-->
+
+          <!-- privacy -->
+          <div class="privacy">
+            <p><strong>About your privacy</strong></p>
+            <p>We collect data in order to better understand our supporters and refine our marketing.</p>
+            <p>We never release, re-use or re-sell this or any other information to third-parties.</p>
+            <p>Read more about our <a href="#">privacy policy.</a></p>
+          </div>
 
           <!-- payment details -->
           <fieldset class="payment-details">
             <h2>Payment details</h2>
 
             <label for="account-name">Name (as it appears on card) *</label>
-            <input input="text" id="account-name" name="account_name">
+            <input type="text" id="account-name" name="account_name">
 
             <label for="account-number">Account number *</label>
-            <input inputmode="numeric" id="account" name="account_num">
+            <input type="text" id="account-number" name="account_num">
 
             <label for="sort-code">Sort Code *</label>
-            <input inputmode="numeric" id="sort-code" name="sort_code">
+            <input type="text" id="sort-code" name="sort_code">
 
             <!-- direct debit confirmation -->
             <div class="direct-debit">
@@ -97,9 +112,10 @@
             <div class="gift-aid">
               <h2>Gift Aid</h2>
               <p>Choosing gift aid allows us to claim an extra 20% per pound you donate at no extra cost to you!</p>
-              <label for="gift-aid">Yes I'd like to add gift add</label>
+              <p>Put simply, if you were kind enough to donate fifty pounds we can claim an extra tenner!</p>
+              <label for="gift-aid">Yes! I'd love to help with gift aid!</label>
               <input type="checkbox" id="gift-aid" name="gift_aid">
-            </div>  
+            </div>
           </fieldset>
           <!-- close payment details -->
 

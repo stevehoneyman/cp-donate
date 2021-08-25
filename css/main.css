@@ -126,7 +126,7 @@ header {
 .form-container {
   width: 100%;
   max-width: 680px;
-  padding-bottom: re5m;
+  padding-bottom: 1rem;
   margin: 0 auto; }
   .form-container .personal-details,
   .form-container .payment-details,
@@ -333,9 +333,10 @@ button {
     text-transform: uppercase;
     color: #fff;
     background: #e61576; }
-  .opener input[type="textarea"],
-  .confirmation input[type="textarea"] {
-    height: 200px; }
+  .opener textarea,
+  .confirmation textarea {
+    width: 100%;
+    min-height: 100px; }
   .opener a,
   .confirmation a {
     text-decoration: none; }
@@ -373,7 +374,7 @@ button {
   .confirmation h1 {
     font-size: 52px; }
   .confirmation p {
-    padding-bottom: 3rem; }
+    margin-bottom: 3rem; }
   .confirmation .tick {
     width: 250px;
     height: 250px;
@@ -388,13 +389,15 @@ button {
     color: #fff; }
   .confirmation .stay-in-touch {
     padding-left: 2rem;
-    display: flex; }
+    display: flex;
+    flex-direction: column; }
     .confirmation .stay-in-touch input[type="checkbox"] {
-      margin-right: 1rem; }
+      margin: 0 1rem 1rem 0; }
     .confirmation .stay-in-touch label {
       font-weight: 600;
       color: #1b195a; }
     .confirmation .stay-in-touch p {
+      width: 90%;
       text-align: left; }
 
 .screen-one h2,
