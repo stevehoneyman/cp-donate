@@ -132,7 +132,7 @@ header img {
 #site-wrapper-no-bg {
   width: 100%;
   max-width: 320px;
-  margin: 0 auto;
+  margin: 1rem auto 0;
 }
 #site-wrapper-no-bg header {
   margin-bottom: 0;
@@ -359,12 +359,15 @@ button a:active {
 }
 .opener input,
 .opener textarea,
-.opener input[type="checkbox"],
+.opener select,
 .confirmation input,
 .confirmation textarea,
-.confirmation input[type="checkbox"] {
+.confirmation select {
+  padding: .5rem;
   border: none;
   background: #fff;
+  font-family: 'helvetica', 'arial', 'sans-serif';
+  font-size: 1rem;
 }
 .opener input,
 .confirmation input {

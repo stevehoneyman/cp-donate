@@ -32,7 +32,7 @@
           </fieldset>
 
           <!-- select payment method-->
-          <fieldset class="payment-method">
+          <!-- <fieldset class="payment-method">
             <h2>Select Payment Method</h2>
 
             <div class="payment-choices">
@@ -42,7 +42,7 @@
               <label for="pp">PayPal</label>
               <input type="radio" id="pp" name="choice" value="pp">
             </div>
-          </fieldset>
+          </fieldset> -->
 
           <!-- account details -->
           <fieldset class="personal-details">
@@ -103,10 +103,10 @@
             <input type="text" id="sort-code" name="sort_code">
 
             <!-- direct debit confirmation -->
-            <div class="direct-debit">
+            <!-- <div class="direct-debit">
               <label for="dd-conf">I confirm I wish to set up a direct debit</label>
               <input type="checkbox" id="dd-conf" name="dd_conf">
-            </div>
+            </div> -->
 
             <!-- gift aid -->
             <div class="gift-aid">
@@ -118,9 +118,11 @@
           </fieldset>
           <!-- close payment details -->
 
-          <!-- submit -->
-          <input type="submit" value="donate" class="submit">
-
+          <!-- link used to demo user journey in dev, replace with button in prod -->
+          <a href="https://amazing-fermat-ac911c.netlify.app/confirmation-dd.html" class="submit">
+            <!-- <input type="submit" value="donate" class="submit"> -->
+            Donate
+          </a>
         </form><!-- close form -->
       </div><!-- close form-container -->
 
