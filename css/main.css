@@ -9,7 +9,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 article,
 aside,
@@ -24,15 +25,18 @@ main,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 img {
   display: block;
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 ul, li {
-  list-style: none; }
+  list-style: none;
+}
 
 button {
   display: inline-flex;
@@ -46,12 +50,14 @@ button {
   cursor: pointer;
   background: transparent;
   -webkit-appearance: none;
-  -moz-appearance: none; }
+  -moz-appearance: none;
+}
 
 /* utilities
 ----------------------------------------------------------------------------- */
 .wrap {
-  padding: 0 3%; }
+  padding: 0 3%;
+}
 
 /* type
 ----------------------------------------------------------------------------- */
@@ -63,11 +69,13 @@ h3 {
   font-style: normal;
   text-align: center;
   line-height: 1.25;
-  letter-spacing: .5px; }
+  letter-spacing: .5px;
+}
 
 li {
   line-height: 1.25;
-  letter-spacing: .5px; }
+  letter-spacing: .5px;
+}
 
 h1 {
   width: 100%;
@@ -77,18 +85,22 @@ h1 {
   font-size: 4rem;
   line-height: 1;
   text-transform: uppercase;
-  color: #1b195a; }
+  color: #1b195a;
+}
 
 h2,
 h3 {
   margin-bottom: 3rem;
-  color: #fff; }
+  color: #fff;
+}
 
 h2 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 h3 {
-  font-size: 28px; }
+  font-size: 28px;
+}
 
 /* layout
 ----------------------------------------------------------------------------- */
@@ -99,7 +111,8 @@ h3 {
   background-image: url("../images/coppa-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+}
 
 header {
   border-bottom: 0.5rem solid #1b195a;
@@ -109,17 +122,21 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #f0f0f0; }
-  header img {
-    width: 10rem;
-    height: auto; }
+  background: #f0f0f0;
+}
+header img {
+  width: 10rem;
+  height: auto;
+}
 
 #site-wrapper-no-bg {
   width: 100%;
   max-width: 320px;
-  margin: 0 auto; }
-  #site-wrapper-no-bg header {
-    margin-bottom: 0; }
+  margin: 0 auto;
+}
+#site-wrapper-no-bg header {
+  margin-bottom: 0;
+}
 
 /* forms
 ----------------------------------------------------------------------------- */
@@ -127,27 +144,34 @@ header {
   width: 100%;
   max-width: 680px;
   padding-bottom: 1rem;
-  margin: 0 auto; }
-  .form-container .personal-details,
-  .form-container .payment-details,
-  .form-container .direct-debit,
-  .form-container .privacy,
-  .form-container .gift-aid {
-    margin-top: 3rem; }
-  .form-container h2,
-  .form-container h3 {
-    color: #1b195a; }
-  .form-container p {
-    margin-bottom: 1rem;
-    font-family: "helvetica"; }
-  .form-container .privacy p {
-    padding: 0 .25rem;
-    font-size: .75rem; }
-    .form-container .privacy p strong {
-      font-size: 1rem; }
+  margin: 0 auto;
+}
+.form-container .personal-details,
+.form-container .payment-details,
+.form-container .direct-debit,
+.form-container .privacy,
+.form-container .gift-aid {
+  margin-top: 3rem;
+}
+.form-container h2,
+.form-container h3 {
+  color: #1b195a;
+}
+.form-container p {
+  margin-bottom: 1rem;
+  font-family: "helvetica";
+}
+.form-container .privacy p {
+  padding: 0 .25rem;
+  font-size: .75rem;
+}
+.form-container .privacy p strong {
+  font-size: 1rem;
+}
 
 form {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+}
 
 .form-inner {
   padding: 24px;
@@ -155,7 +179,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #e61576; }
+  background: #e61576;
+}
 
 .frequency,
 .amount {
@@ -165,25 +190,28 @@ form {
   flex-direction: column;
   justify-content: center;
   font-family: "bebas-neue-by-fontfabric";
-  color: #fff; }
-  .frequency li,
-  .amount li {
-    width: 100%;
-    min-width: 160px;
-    padding: 1rem;
-    border: 3px solid #f0bdd6;
-    border-radius: 10px;
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
-    text-align: center;
-    box-shadow: #f0bdd6 -5px 5px;
-    transform: translateX(5px); }
-    .frequency li.selected-white-bg,
-    .amount li.selected-white-bg {
-      border: 3px solid #ae1059;
-      box-shadow: #ae1059 -5px 5px;
-      background: #fff;
-      color: #ae1059; }
+  color: #fff;
+}
+.frequency li,
+.amount li {
+  width: 100%;
+  min-width: 160px;
+  padding: 1rem;
+  border: 3px solid #f0bdd6;
+  border-radius: 10px;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: #f0bdd6 -5px 5px;
+  transform: translateX(5px);
+}
+.frequency li.selected-white-bg,
+.amount li.selected-white-bg {
+  border: 3px solid #ae1059;
+  box-shadow: #ae1059 -5px 5px;
+  background: #fff;
+  color: #ae1059;
+}
 
 .your-donation-25,
 .your-donation-50,
@@ -194,31 +222,37 @@ form {
   box-shadow: #1b195a -5px 5px;
   margin-bottom: 3rem;
   background: #fff;
-  transform: translateX(5px); }
-  .your-donation-25 p,
-  .your-donation-50 p,
-  .your-donation-100 p {
-    font-family: helvetica, arial, 'sans-serif';
-    font-size: .875rem;
-    line-height: 1.45;
-    color: #1b195a; }
-    .your-donation-25 p strong,
-    .your-donation-50 p strong,
-    .your-donation-100 p strong {
-      margin-bottom: .875rem;
-      font-family: "bebas-neue-by-fontfabric";
-      font-size: 1.25rem;
-      letter-spacing: .5px; }
+  transform: translateX(5px);
+}
+.your-donation-25 p,
+.your-donation-50 p,
+.your-donation-100 p {
+  font-family: helvetica, arial, 'sans-serif';
+  font-size: .875rem;
+  line-height: 1.45;
+  color: #1b195a;
+}
+.your-donation-25 p strong,
+.your-donation-50 p strong,
+.your-donation-100 p strong {
+  margin-bottom: .875rem;
+  font-family: "bebas-neue-by-fontfabric";
+  font-size: 1.25rem;
+  letter-spacing: .5px;
+}
 
 .your-donation-25 {
-  display: block; }
+  display: block;
+}
 
 .your-donation-50,
 .your-donation-100 {
-  display: none; }
-  .your-donation-50.show-data,
-  .your-donation-100.show-data {
-    display: block; }
+  display: none;
+}
+.your-donation-50.show-data,
+.your-donation-100.show-data {
+  display: block;
+}
 
 button {
   width: 100%;
@@ -231,24 +265,28 @@ button {
   letter-spacing: .5px;
   text-align: center;
   color: #fff;
-  transform: translateX(5px); }
-  button a,
-  button a:link,
-  button a:visited,
-  button a:active {
-    color: #ae1059;
-    text-decoration: none; }
+  transform: translateX(5px);
+}
+button a,
+button a:link,
+button a:visited,
+button a:active {
+  color: #ae1059;
+  text-decoration: none;
+}
 
 .selected-white {
   border: 3px solid #fff;
   box-shadow: white -5px 5px;
-  color: #fff; }
+  color: #fff;
+}
 
 .selected-white-bg {
   border: 3px solid #ae1059;
   box-shadow: #ae1059 -5px 5px;
   background: #fff;
-  color: #ae1059; }
+  color: #ae1059;
+}
 
 #set-amount {
   width: 50%;
@@ -258,12 +296,14 @@ button {
   border-radius: 10px;
   margin-bottom: 3rem;
   background: #e61576;
-  transform: translateX(5px); }
-  #set-amount::placeholder {
-    font-family: "bebas-neue-by-fontfabric";
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #fff; }
+  transform: translateX(5px);
+}
+#set-amount::placeholder {
+  font-family: "bebas-neue-by-fontfabric";
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
 
 .set-amount {
   margin-bottom: 1rem;
@@ -271,153 +311,184 @@ button {
   font-size: 28px;
   letter-spacing: .5px;
   color: #fff;
-  transform: translateX(3px); }
+  transform: translateX(3px);
+}
 
 .opener,
 .confirmation {
   font-family: "bebas-neue-by-fontfabric";
-  background: #f0f0f0; }
-  .opener h1,
-  .opener h2,
-  .opener h3,
-  .confirmation h1,
-  .confirmation h2,
-  .confirmation h3 {
-    padding: 0;
-    margin-bottom: 1rem;
-    text-align: left;
-    background: none; }
-  .opener h1,
-  .confirmation h1 {
-    padding-top: 2rem;
-    margin: .5rem 0;
-    font-size: 52px; }
-  .opener h2,
-  .confirmation h2 {
-    margin: 1rem 0;
-    font-size: 2rem; }
-  .opener h3,
-  .confirmation h3 {
-    font-size: 1.5rem; }
-  .opener label,
-  .opener input,
-  .confirmation label,
-  .confirmation input {
-    display: block; }
-  .opener label,
-  .confirmation label {
-    margin: 1rem 0 .5rem 0;
-    font-family: sans-serif;
-    letter-spacing: .5px; }
-  .opener input,
-  .opener textarea,
-  .opener input[type="checkbox"],
-  .confirmation input,
-  .confirmation textarea,
-  .confirmation input[type="checkbox"] {
-    border: none;
-    background: #fff; }
-  .opener input,
-  .confirmation input {
-    width: 100%;
-    height: 56px; }
-  .opener input[type="radio"],
-  .confirmation input[type="radio"] {
-    height: 40px; }
-  .opener input[type="checkbox"],
-  .confirmation input[type="checkbox"] {
-    width: 56px; }
-  .opener .submit,
-  .confirmation .submit {
-    height: 120px;
-    margin: 3rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: inherit;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: #fff;
-    background: #e61576; }
-  .opener textarea,
-  .confirmation textarea {
-    width: 100%;
-    min-height: 100px; }
-  .opener a,
-  .confirmation a {
-    text-decoration: none; }
-  .opener #amount-select,
-  .confirmation #amount-select {
-    width: 100%;
-    height: 56px;
-    padding: .5rem;
-    font-family: "bebas-neue-by-fontfabric";
-    font-size: 2.5rem;
-    color: #1b195a; }
-  .opener .payment-method,
-  .confirmation .payment-method {
-    border: none; }
-  .opener .payment-choices,
-  .confirmation .payment-choices {
-    display: flex;
-    align-items: center; }
-  .opener .gift-aid p,
-  .confirmation .gift-aid p {
-    width: 100%;
-    margin-bottom: 2rem;
-    font-family: sans-serif;
-    font-size: .75rem; }
+  background: #f0f0f0;
+}
+.opener h1,
+.opener h2,
+.opener h3,
+.confirmation h1,
+.confirmation h2,
+.confirmation h3 {
+  padding: 0;
+  margin-bottom: 1rem;
+  text-align: left;
+  background: none;
+}
+.opener h1,
+.confirmation h1 {
+  padding-top: 2rem;
+  margin: .5rem 0;
+  font-size: 52px;
+}
+.opener h2,
+.confirmation h2 {
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+.opener h3,
+.confirmation h3 {
+  font-size: 1.5rem;
+}
+.opener label,
+.opener input,
+.confirmation label,
+.confirmation input {
+  display: block;
+}
+.opener label,
+.confirmation label {
+  margin: 1rem 0 .5rem 0;
+  font-family: sans-serif;
+  letter-spacing: .5px;
+}
+.opener input,
+.opener textarea,
+.opener input[type="checkbox"],
+.confirmation input,
+.confirmation textarea,
+.confirmation input[type="checkbox"] {
+  border: none;
+  background: #fff;
+}
+.opener input,
+.confirmation input {
+  width: 100%;
+  height: 56px;
+}
+.opener input[type="radio"],
+.confirmation input[type="radio"] {
+  height: 40px;
+}
+.opener input[type="checkbox"],
+.confirmation input[type="checkbox"] {
+  width: 56px;
+}
+.opener .submit,
+.confirmation .submit {
+  height: 120px;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: #e61576;
+}
+.opener textarea,
+.confirmation textarea {
+  width: 100%;
+  min-height: 100px;
+}
+.opener a,
+.confirmation a {
+  text-decoration: none;
+}
+.opener #amount-select,
+.confirmation #amount-select {
+  width: 100%;
+  height: 56px;
+  padding: .5rem;
+  font-family: "bebas-neue-by-fontfabric";
+  font-size: 2.5rem;
+  color: #1b195a;
+}
+.opener .payment-method,
+.confirmation .payment-method {
+  border: none;
+}
+.opener .payment-choices,
+.confirmation .payment-choices {
+  display: flex;
+  align-items: center;
+}
+.opener .gift-aid p,
+.confirmation .gift-aid p {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: sans-serif;
+  font-size: .75rem;
+}
 
 .confirmation {
   width: 100%;
   max-width: 680px;
-  margin: 0 auto; }
-  .confirmation h1,
-  .confirmation h2,
-  .confirmation p {
-    color: #1b195a;
-    text-align: center; }
-  .confirmation h1 {
-    font-size: 52px; }
-  .confirmation p {
-    margin-bottom: 3rem; }
-  .confirmation .tick {
-    width: 250px;
-    height: 250px;
-    border: 3px solid #5cb85c;
-    border-radius: 50%;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #5cb85c;
-    font-size: 10rem;
-    color: #fff; }
-  .confirmation .stay-in-touch {
-    padding-left: 2rem;
-    display: flex;
-    flex-direction: column; }
-    .confirmation .stay-in-touch input[type="checkbox"] {
-      margin: 0 1rem 1rem 0; }
-    .confirmation .stay-in-touch label {
-      font-weight: 600;
-      color: #1b195a; }
-    .confirmation .stay-in-touch p {
-      width: 90%;
-      text-align: left; }
+  margin: 0 auto;
+}
+.confirmation h1,
+.confirmation h2,
+.confirmation p {
+  color: #1b195a;
+  text-align: center;
+}
+.confirmation h1 {
+  font-size: 52px;
+}
+.confirmation p {
+  margin-bottom: 3rem;
+}
+.confirmation .tick {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #5cb85c;
+  border-radius: 50%;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5cb85c;
+  font-size: 10rem;
+  color: #fff;
+}
+.confirmation .stay-in-touch {
+  padding: 0 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.confirmation .stay-in-touch input[type="checkbox"] {
+  margin: 0 1rem 1rem 0;
+}
+.confirmation .stay-in-touch label {
+  font-weight: 600;
+  color: #1b195a;
+}
+.confirmation .stay-in-touch p {
+  width: 100%;
+  text-align: left;
+}
 
 .screen-one h2,
 .screen-one h3 {
-  color: #fff; }
+  color: #fff;
+}
 
 fieldset {
   border: none;
   margin: 3rem 0;
   display: flex;
-  flex-direction: column; }
-  .confirmation fieldset {
-    padding-top: 3rem;
-    border-top: 5px solid #1b195a;
-    margin: 0; }
+  flex-direction: column;
+}
+.confirmation fieldset {
+  padding-top: 2rem;
+  border-top: 5px solid #1b195a;
+  margin: 0;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -326,7 +326,7 @@ button {
   }
 
   .stay-in-touch {
-    padding-left: 2rem;
+    padding: 0 2rem 3rem 2rem;
     display: flex;
     flex-direction: column;
 
@@ -342,7 +342,7 @@ button {
     }
 
     p {
-      width: 90%;
+      width: 100%;
       text-align: left;
     }
   }
@@ -363,7 +363,7 @@ fieldset {
   flex-direction: column;
 
   .confirmation & {
-    padding-top: 3rem;
+    padding-top: 2rem;
     border-top: 5px solid $brand-blue;
     margin: 0;
   }
